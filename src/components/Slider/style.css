@@ -1,0 +1,28 @@
+.sliderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sliderContainer > div > svg {
+  font-size: 2.5rem;
+  color: var(--purple);
+  position: relative;
+  bottom: 1.5rem;
+  cursor: pointer;
+}
+.sliderContainer > div > svg:hover {
+  opacity: 0.7;
+}
+.sliderContent {
+  max-width: 1600px;
+  width: 100%;
+  overflow: hidden;
+}
+.sliderList {
+  width: auto;
+  display: flex;
+  gap: 1.9rem;
+  position: relative;
+  transition: right 250ms linear;
+}

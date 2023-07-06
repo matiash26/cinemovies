@@ -1,0 +1,19 @@
+.inputMask {
+  max-width: 800px;
+  width: 100%;
+  padding: 0.9rem 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+
+  background-color: #1b1d1e;
+  color: var(--white);
+  border: 1px solid rgba(128, 128, 128, 0.303);
+}
+.inputMask::placeholder {
+  font-size: 1rem;
+}
+.inputMask:focus {
+  border: 1px solid var(--purple);
+}

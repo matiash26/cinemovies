@@ -1,0 +1,22 @@
+button {
+  align-self: center;
+  background-color: var(--purple);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--white);
+  border-radius: 0.3rem;
+  transition: box-shadow 250ms;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+button:hover {
+  box-shadow: 0px 0px 10px #ffffff40;
+  transition: box-shadow 250ms;
+}
+.red {
+  background-color: rgba(211, 46, 25, 0.788);
+}
+button:disabled {
+  opacity: 0.6;
+}

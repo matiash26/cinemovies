@@ -1,0 +1,36 @@
+label {
+  width: 100%;
+}
+input {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+}
+label > span {
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 2.25rem;
+  left: 0.7rem;
+  transition: all 250ms;
+  user-select: none;
+  color: var(--purple);
+}
+label:focus-within > span {
+  position: relative;
+  bottom: 4.5rem;
+  color: var(--white);
+  transition: all 250ms;
+}
+.normalInput:valid {
+  border: 2px solid var(--purple);
+}
+.normalInput:valid + span {
+  position: relative;
+  bottom: 4.5rem;
+  transition: all 250ms;
+  color: var(--white);
+}

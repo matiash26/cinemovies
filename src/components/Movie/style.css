@@ -1,0 +1,84 @@
+.movieCard {
+  width: 280px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.movieImg {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 0.4rem;
+  filter: blur(0);
+  transition: filter 200ms ease-in;
+}
+.title {
+  display: inline-block;
+  width: 280px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.movieCard > a,
+.title {
+  color: var(--white);
+  color: #a3b0bd;
+  opacity: 0.9;
+}
+.movieDescription {
+  display: flex;
+  font-weight: 300;
+}
+.movieDescription,
+.rate > svg {
+  color: var(--white);
+  opacity: 0.7;
+}
+.rate {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.rate > svg {
+  margin-right: 0.3rem;
+}
+
+.rate > span > span {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+.movieBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.movieBanner > a {
+  opacity: 0;
+  position: absolute;
+
+  text-decoration: none;
+  z-index: 2;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  color: var(--white);
+  background-color: var(--purple);
+
+  padding: 0.5rem 0.4rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: opacity 200ms ease-in;
+}
+
+.movieCard:hover > .movieBanner > a {
+  opacity: 0.8;
+  transition: opacity 200ms ease-in;
+}
+.movieCard:hover .movieImg {
+  filter: blur(2px);
+  transition: filter 200ms ease-in;
+}

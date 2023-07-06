@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #0e1016;
+  --lightBg: #0e1016a6;
+  --lightGray: #1a1d25;
+
+  --white: #ffff;
+
+  --lightPurple: #711bfa0d;
+  --purple: #701bfa83;
+  --red: rgba(124, 38, 38, 0.801);
+}
+body {
+  background-color: var(--bg);
+  overflow-x: hidden;
+}
+.containerMovie {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  transform: translateX(-200px);
+  animation: initialItems 400ms forwards cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  opacity: 0;
+}
+.contentMovie {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.18rem;
+  padding-top: 1rem;
+}
+
+@keyframes initialItems {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

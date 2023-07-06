@@ -1,0 +1,26 @@
+.contentHighLight {
+  width: 100%;
+  margin: auto;
+}
+.contentHighLight > h1 {
+  color: var(--white);
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+.contentHighLight > h1 > a {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--white);
+  text-transform: none;
+  margin-left: 0.8rem;
+}
+.contentHighLight > h1 > a:hover {
+  opacity: 0.7;
+}
+.contentMoviePage {
+  width: 100%;
+  padding-top: 1rem;
+}

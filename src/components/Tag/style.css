@@ -1,0 +1,10 @@
+.tagGener {
+  background-color: var(--lightGray);
+  border-radius: 1rem;
+  color: var(--white);
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.5rem;
+}

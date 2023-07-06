@@ -1,0 +1,31 @@
+.mainHomePage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.mainHomePage > .movieCard {
+}
+@media (max-width: 1500px) {
+  .sliderList {
+    /* gap: 5rem; */
+  }
+}
+@media (max-width: 1338px) {
+  .sliderList {
+    /* gap: 8.8rem; */
+  }
+}
+@media (max-width: 1080px) {
+  .logo {
+    display: none;
+  }
+  .sliderList {
+    /* gap: 13.8rem; */
+  }
+}
+@media (max-width: 700px) {
+  .sliderList {
+    /* gap: 20.8rem; */
+  }
+}
